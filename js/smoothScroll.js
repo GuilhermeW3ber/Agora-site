@@ -1,13 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-ScrollTrigger.normalizeScroll(true)
-
-// create the smooth scroller FIRST!
-let smoother = ScrollSmoother.create({
-  smooth: 1,
-  effects: false,
-  normalizeScroll: false
-});
+gsap.registerPlugin(ScrollTrigger);
 
 const details = gsap.utils.toArray(".desktopContentSection:not(:first-child)")
 const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)")
