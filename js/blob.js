@@ -39,7 +39,7 @@ function createWorld() {
   window.addEventListener('resize', onWindowResize, true);
 }
 function onWindowResize() {
-  _width = window.innerWidth-20;
+  _width = window.innerWidth;
   _height = window.innerHeight;
   renderer.setSize(_width, _height);
   camera.aspect = _width / _height;
