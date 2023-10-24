@@ -21,13 +21,13 @@ var shapeGroup = new THREE.Group();
 var start = Date.now();
 
 function createWorld() {
-  _width = window.innerWidth-20;
+  _width = window.innerWidth;
   _height= window.innerHeight;
   //---
   scene = new THREE.Scene();
   scene.background = new THREE.Color(Theme.secundary);
   //---
-  camera = new THREE.PerspectiveCamera(50, _width/_height, 1, 1000);
+  camera = new THREE.PerspectiveCamera(60, _width/_height, 1, 1000);
   camera.position.set(0,0,16);
   //---
   renderer = new THREE.WebGLRenderer({antialias:false, alpha:false});
