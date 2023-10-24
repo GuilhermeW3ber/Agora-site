@@ -21,7 +21,7 @@ var shapeGroup = new THREE.Group();
 var start = Date.now();
 
 function createWorld() {
-  _width = window.innerWidth;
+  _width = window.innerWidth-20;
   _height= window.innerHeight;
   //---
   scene = new THREE.Scene();
@@ -39,7 +39,7 @@ function createWorld() {
   window.addEventListener('resize', onWindowResize, true);
 }
 function onWindowResize() {
-  _width = window.innerWidth;
+  _width = window.innerWidth-20;
   _height = window.innerHeight;
   renderer.setSize(_width, _height);
   camera.aspect = _width / _height;
