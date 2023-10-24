@@ -27,7 +27,7 @@ function createWorld() {
   scene = new THREE.Scene();
   scene.background = new THREE.Color(Theme.secundary);
   //---
-  camera = new THREE.PerspectiveCamera(30, _width/_height, 1, 1000);
+  camera = new THREE.PerspectiveCamera(50, _width/_height, 1, 1000);
   camera.position.set(0,0,16);
   //---
   renderer = new THREE.WebGLRenderer({antialias:false, alpha:false});
