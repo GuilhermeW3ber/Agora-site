@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/coolvetica');
 
+canvas{
+  z-index: 999999;
+}
+
 .cursor-dot{
   width: 5px;
   height: 5px;
@@ -243,8 +247,6 @@
   transition-delay: 1640ms;
 }
 
-
-
 .logo {
 	position: absolute;
 	top: 60px;
@@ -313,6 +315,7 @@ body{
   list-style: none;
   box-sizing: border-box;
   /* cursor: none; */
+
 }
 
 a{
