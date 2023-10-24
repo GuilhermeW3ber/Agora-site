@@ -320,8 +320,6 @@ a{
   align-items: center;
 }
 
-
-
 .section-center{
   position: relative;
   display: block;
@@ -2239,5 +2237,15 @@ svg .mask {
 
 .blob{
   width: 80%;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid{ 
+  position: absolute;
 }
 

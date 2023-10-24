@@ -27,7 +27,7 @@ function createWorld() {
   scene = new THREE.Scene();
   scene.background = new THREE.Color(Theme.secundary);
   //---
-  camera = new THREE.PerspectiveCamera(35, _width/_height, 1, 1000);
+  camera = new THREE.PerspectiveCamera(40, _width/_height, 1, 1000);
   camera.position.set(0,0,16);
   //---
   renderer = new THREE.WebGLRenderer({antialias:false, alpha:false});
@@ -36,7 +36,7 @@ function createWorld() {
   //---
   document.body.appendChild(renderer.domElement);
   //---
-  window.addEventListener('resize', onWindowResize, false);
+  // window.addEventListener('resize', onWindowResize, true);
 }
 function onWindowResize() {
   _width = window.innerWidth;
