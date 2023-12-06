@@ -396,7 +396,7 @@ a{
   line-height: 1;
   margin-top: -200px;
   margin-bottom: 50px;
-  color: #000;
+  color: #cecece;
 }
 
 .section-center-title{
@@ -818,7 +818,6 @@ a{
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.1em;
-  line-height: 1;
   margin: 20px;
   margin-top: 5px;
   margin-bottom: 35px;
@@ -829,7 +828,7 @@ a{
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 2em;
-  line-height: 1;
+  /* line-height: 0px; */
   margin: 20px;
   margin-top: 5px;
   margin-bottom: 60px;
@@ -1580,8 +1579,64 @@ section{
   border-top: 0.5px solid #3B3B3B;
 }
 
+.background-contact{
+  width: 100%;
+  background:
+    linear-gradient(217deg, rgb(2, 0, 0), rgba(255,0,0,0) ),
+    linear-gradient(127deg, rgba(0,0,255), rgba(0,255,0,0) ),
+    linear-gradient(336deg, rgb(172, 70, 23), rgba(0,0,255,0) ),
+    linear-gradient(217deg, rgb(2, 0, 0), rgba(255,0,0,0) );
+  margin-top: -10px;
+}
+
 .section-contact{
-  display: none;
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 5vh 0 8vh;
+}
+
+.section-contact h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:600;
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.section-contact h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1;
+  /* color: #ffeba7;
+  -webkit-text-stroke: 2px #ffeba7;
+  text-stroke: 2px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; */
+  line-height: 1.5;
+  color: #808080;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+}
+
+.section-contact a{
+  color: #fff;
+  background-color: #3B42C4;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 14px 20px 14px 20px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  line-height: 1;
 }
 
 .hotbar{
@@ -2106,7 +2161,7 @@ section{
 }
 
 .red {
-	background: #f5ef7d;
+	background: #c7c7c7;
 }
 
 .red img{
@@ -2114,7 +2169,7 @@ section{
   margin-left: 5%;
   margin-top: 25%;
   border-radius: 20px;
-  box-shadow:10px 10px 50px 5px #585623
+  box-shadow:10px 10px 50px 5px #5a5a5a
 
 }
 
@@ -2166,6 +2221,7 @@ section{
   padding: 15px 20px 15px 20px; 
   border-radius: 50px;
   margin-top: 35px; 
+  margin-bottom:200px;
   width: 100px;
 }
 
@@ -2174,6 +2230,14 @@ section{
 	height:80vw;
 	margin-top:4em;
 	border-radius:6vw;
+}
+
+.mobilePhoto img{
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 15%;
 }
 
 /* defines styles for screens up to 599px wide */

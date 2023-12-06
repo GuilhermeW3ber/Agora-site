@@ -9,7 +9,7 @@ var body = document.getElementsByTagName('body')[0];
                     body.style.backgroundColor = '#ffff';
                 } else if (scroll >= 200 && scroll < 2000) {
                     // yellow
-                    body.style.backgroundColor = 'rgb(255,237,224)';
+                    body.style.backgroundColor = '#e2e2e2';
                     
                 } else if (scroll >= 2100 && scroll < 2200) {
                     // orange
