@@ -14,7 +14,7 @@ const allPhotos = gsap.utils.toArray(".desktopPhoto")
 let mm = gsap.matchMedia();
 
 // add a media query. When it matches, the associated function will run
-mm.add("(min-width: 600px)", () => {
+mm.add("(min-width: 780px)", () => {
 
   // this setup code only runs when viewport is at least 600px wide
   console.log("desktop")

@@ -4,152 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="./css/navbarStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="./Src/DryTech (Sem  Fundo).png" type="image/x-icon">
     <title>Ágora Inc</title>
+	
 </head>
 <body>
-	<!-- <a href="https://front.codes/" class="logo" target="_blank">
-		<img src="https://assets.codepen.io/1462889/fcy.png" alt="">
-	</a> -->
-
-  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
   	<label for="menu-icon"></label>
-
+	<div class="logo">
+		<a href="">
+			<img src="./src/logo/ágora_logo.png" alt="" id="logo">
+		</a>
+	</div>
   	<nav class="nav"> 		
   		<ul class="pt-5">
-  			<li><a href="#">Work</a></li>
-  			<li><a href="#">Studio</a></li>
-  			<li><a href="#">News</a></li>
-  			<li><a href="#">Contact</a></li>
+  			<li><a href="#">Quem Somos</a></li>
+  			<li><a href="#">Projetos</a></li>
+			<li><a href="#">Processo</a></li>
+  			<li><a href="#">Contato</a></li>
   		</ul>
   	</nav>
 	<div class="cursor-dot" data-cursor-dot></div>
 	<div class="cursor-outline" data-cursor-outline></div>
-	<canvas class="ebgl"></canvas>
-	<div class="container-fluid fixed-top header disable-selection">
-		<div class="row">
-		  <div class="col">
-			<h1><strong>Blob</strong></h1>
-			<!--p.small(href='#',role='button')strong 708.588 POINTS
-			-->
-		  </div>
+	<div class="animation-wrapper">
+		<div class="sphere-animation">
+			<svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
+				<defs>
+				<linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
+					<stop stop-color="#373734" offset="0%"/>
+					<stop stop-color="#242423" offset="50%"/>
+					<stop stop-color="#0D0D0C" offset="100%"/>
+				</linearGradient>
+				</defs>
+				<path d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 59.663-28.726 8.542 8.543-4.319 35.255-28.727 59.662z"/>
+				<path d="M360.72 360.354c-35.879 35.88-75.254 54.677-87.946 41.985-12.692-12.692 6.105-52.067 41.985-87.947 35.879-35.879 75.254-54.676 87.946-41.984 12.692 12.692-6.105 52.067-41.984 87.946z"/>
+				<path d="M357.185 356.819c-44.91 44.91-94.376 68.258-110.485 52.149-16.11-16.11 7.238-65.575 52.149-110.485 44.91-44.91 94.376-68.259 110.485-52.15 16.11 16.11-7.239 65.576-52.149 110.486z"/>
+				<path d="M350.998 350.632c-53.21 53.209-111.579 81.107-130.373 62.313-18.794-18.793 9.105-77.163 62.314-130.372 53.209-53.21 111.579-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
+				<path d="M343.043 342.677c-59.8 59.799-125.292 91.26-146.283 70.268-20.99-20.99 10.47-86.483 70.269-146.282 59.799-59.8 125.292-91.26 146.283-70.269 20.99 20.99-10.47 86.484-70.27 146.283z"/>
+				<path d="M334.646 334.28c-65.169 65.169-136.697 99.3-159.762 76.235-23.065-23.066 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
+				<path d="M324.923 324.557c-69.806 69.806-146.38 106.411-171.031 81.76-24.652-24.652 11.953-101.226 81.759-171.032 69.806-69.806 146.38-106.411 171.031-81.76 24.652 24.653-11.953 101.226-81.759 171.032z"/>
+				<path d="M312.99 312.625c-73.222 73.223-153.555 111.609-179.428 85.736-25.872-25.872 12.514-106.205 85.737-179.428s153.556-111.609 179.429-85.737c25.872 25.873-12.514 106.205-85.737 179.429z"/>
+				<path d="M300.175 299.808c-75.909 75.909-159.11 115.778-185.837 89.052-26.726-26.727 13.143-109.929 89.051-185.837 75.908-75.908 159.11-115.778 185.837-89.051 26.726 26.726-13.143 109.928-89.051 185.836z"/>
+				<path d="M284.707 284.34c-77.617 77.617-162.303 118.773-189.152 91.924-26.848-26.848 14.308-111.534 91.924-189.15C265.096 109.496 349.782 68.34 376.63 95.188c26.849 26.849-14.307 111.535-91.923 189.151z"/>
+				<path d="M269.239 267.989c-78.105 78.104-163.187 119.656-190.035 92.807-26.849-26.848 14.703-111.93 92.807-190.035 78.105-78.104 163.187-119.656 190.035-92.807 26.849 26.848-14.703 111.93-92.807 190.035z"/>
+				<path d="M252.887 252.52C175.27 330.138 90.584 371.294 63.736 344.446 36.887 317.596 78.043 232.91 155.66 155.293 233.276 77.677 317.962 36.521 344.81 63.37c26.85 26.848-14.307 111.534-91.923 189.15z"/>
+				<path d="M236.977 236.61C161.069 312.52 77.867 352.389 51.14 325.663c-26.726-26.727 13.143-109.928 89.052-185.837 75.908-75.908 159.11-115.777 185.836-89.05 26.727 26.726-13.143 109.928-89.051 185.836z"/>
+				<path d="M221.067 220.7C147.844 293.925 67.51 332.31 41.639 306.439c-25.873-25.873 12.513-106.206 85.736-179.429C200.6 53.786 280.931 15.4 306.804 41.272c25.872 25.873-12.514 106.206-85.737 179.429z"/>
+				<path d="M205.157 204.79c-69.806 69.807-146.38 106.412-171.031 81.76-24.652-24.652 11.953-101.225 81.759-171.031 69.806-69.807 146.38-106.411 171.031-81.76 24.652 24.652-11.953 101.226-81.759 171.032z"/>
+				<path d="M189.247 188.881c-65.169 65.169-136.696 99.3-159.762 76.235-23.065-23.065 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
+				<path d="M173.337 172.971c-59.799 59.8-125.292 91.26-146.282 70.269-20.991-20.99 10.47-86.484 70.268-146.283 59.8-59.799 125.292-91.26 146.283-70.269 20.99 20.991-10.47 86.484-70.269 146.283z"/>
+				<path d="M157.427 157.061c-53.209 53.21-111.578 81.108-130.372 62.314-18.794-18.794 9.104-77.164 62.313-130.373 53.21-53.209 111.58-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
+				<path d="M141.517 141.151c-44.91 44.91-94.376 68.259-110.485 52.15-16.11-16.11 7.239-65.576 52.15-110.486 44.91-44.91 94.375-68.258 110.485-52.15 16.109 16.11-7.24 65.576-52.15 110.486z"/>
+				<path d="M125.608 125.241c-35.88 35.88-75.255 54.677-87.947 41.985-12.692-12.692 6.105-52.067 41.985-87.947C115.525 43.4 154.9 24.603 167.592 37.295c12.692 12.692-6.105 52.067-41.984 87.946z"/>
+				<path d="M109.698 109.332c-24.408 24.407-51.12 37.268-59.663 28.726-8.542-8.543 4.319-35.255 28.727-59.662 24.407-24.408 51.12-37.27 59.662-28.727 8.543 8.543-4.319 35.255-28.726 59.663z"/>
+			</svg>
 		</div>
-	  </div>
+	</div>
 		<div class="section-center">
-			
-			<!-- <img src="./src/logo/ágora_logo.png" alt=""> -->
 			<h1>Design.Desenvolvimento.Marca</h1>
 			<div class="section-center-title">
 				<span>Design.</span>
 				<span>Desenvolvimento.</span>
 				<span>Marca.</span>
 			</div>
-			<h2>Converta mais aprimorando sua <br> infraestrutura e automatizando</h2>
+			<h2>Converta mais aprimorando sua <br> infraestrutura digital</h2>
 			<a href=""> Entre em Contato</a>
 			<h3>Auxiliando no crescimento de <i>+10</i> negócios <br> de stratups até companhias.</h3>
 		</div>
-		<div class="main-background">
-			<div class="section-center3">
+		<div>
+			<div class="section-center5">
+				<h1 class="">Quem somos</h1>
+				<h2>Uma agência especializada em desenvolvimento web e aplicações.</h2>
+				<a href="">Saber Mais</a>
+			</div>
+		</div>
+		<div>
+			<div class="section-center2">
 				<h1 class="">Feito para o seu negócio</h1>
-				<h2>Acesse um ecossistema de soluções tech para levar seu negócio ao próximo nível.</h2>
-			</div>
-		</div>
-		<div class="main-services-container">
-			<div class="assistanceWrapper">
-				<div class="assistanceCard">
-					<div class="assistance-text-container">
-						<div class="card-header">
-							<h1>Desenvolvimento <br> de Software</h1>
-							<h2>Traga a solução</h2>
-							<div class="card-icon">
-								<i class='bx bx-code-curly' style='color:#fffcfc' ></i>
-							</div>
-						</div>
-						<h3>Tenha um software próprio para a gestão do seu negócio.</h3>
-						<a class="def-button-assist" href="./casa.html">Saiba Mais</a>
-					</div>
-				</div>
-				<div class="assistanceCard">
-					<div class="assistance-text-container">
-						<div class="card-header">
-							<h1>Desenvolvimento <br> Web</h1>
-							<h2>Crie identidade</h2>
-							<div class="card-icon">
-								<i class='bx bxs-layout'></i>
-							</div>
-						</div>
-						<h3>A apresentação responsável por mudar a visão do seu cliente.</h3>
-						<a class="def-button-assist" href="./casa.html">Saiba Mais</a>
-					</div>
-				</div>
-				<div class="assistanceCard">
-					<div class="assistance-text-container">
-						<div class="card-header">
-							<h1>Gerenciamento <br> de Mídia</h1>
-							<h2>Esteja na frente</h2>
-							<div class="card-icon">
-								<i class='bx bxl-instagram'></i>
-							</div>
-						</div>
-						<h3>Não se preocupe com tráfego, posts ou companhas de venda.</h3>
-						<a class="def-button-assist" href="./casa.html">Saiba Mais</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="main-background">
-			<div class="section-center4">
-				<h1 class="">Veja alguns <br> de nossos projetos</h1>
+				<h2>Acesse um ecossistema de soluções para levar seu negócio ao próximo nível.</h2>
 			</div>
 		</div>
 		<div class="gallery">
 			<div class="left">
 				<div class="desktopContent">
 					<div class="desktopContentSection">
-						<h1>Drywallcuritiba.com.br</h1>
+						<h1 style="color: rgb(219, 219, 1);" >Drywallcuritiba.com.br</h1>
 						<h2>Construtora, <br> prestadora de <br> serviços</h2>
 						<h3>Social Media, Design, <br> Desenvolvimento</h3>
-						<a href="">Saber Mais</a>
+						<a href="" style="border: rgb(212, 212, 72) 1px solid;">Saber Mais</a>
 					</div>
-				
 					<div class="desktopContentSection">
-						<h1>Consultoriadornelles.com.br</h1>
+						<h1 style="color: rgb(72, 196, 212);">Consultoriadornelles.com.br</h1>
 						<h2>Consultoria, <br> planos de Seguros</h2>
 						<h3> Design, Desenvolvimento</h3>
-						<a href="">Saber Mais</a>
+						<a href="" style="border: rgb(72, 196, 212) 1px solid;">Saber Mais</a>
 					</div>
 					<div class="desktopContentSection">
-						<h1>Construtorajcp.com.br</h1>
+						<h1 style="color: #F2AB79;">Construtorajcp.com.br</h1>
 						<h2>Construtora, <br> incorporadora</h2>
 						<h3>Design, Desenvolvimento</h3>
-						<a href="">Saber Mais</a>
+						<a href="" style="border: #F2AB79 1px solid;">Saber Mais</a>
 					</div>
 				</div>
 			</div>
-
 			<div class="right">
-				<!-- mobile content -->
 				<div class="mobileContent">
 					<div class="mobilePhoto red"></div>
 					<h2>Weber Sistemas</h2>
-					<h3>Construtora, prestadora de <br> serviços</h3>
+					<h3>Construtora, Prestadora de <br> Serviços</h3>
 					<a href="">Saber Mais</a>
 					<div class="mobilePhoto green"></div>
-					<h2>Consultoria Dornelles</h2>
-					<h3> Consultoria, <br> planos de Seguros </h3>
+					<h2>Consultoria <br> Dornelles</h2>
+					<h3> Consultoria, <br> Planos de Seguros </h3>
 					<a href="">Saber Mais</a>
 
 					<div class="mobilePhoto pink"></div>
 					<h2>JCP</h2>
-					<h3>Construtora, incorporadora</h3>
+					<h3>Construtora, Incorporadora</h3>
 					<a href="">Saber Mais</a>
 				</div>
-				<!-- desktop content -->
 				<div class="desktopPhotos">
-					<div class="desktopPhoto red"></div>
-					<div class="desktopPhoto green"></div>
+					<div class="desktopPhoto red"> <img src="./src/webImages/weber.png" alt=""></div>
+					<div class="desktopPhoto green"> <img src="./src/webImages/dornelles.png" alt=""></div>
 					<div class="desktopPhoto pink"></div>
 					<div class="desktopPhoto blue"></div>
 				</div>
@@ -157,46 +136,72 @@
 		</div>
 		<div class="wrapper">
 			<div class="container scrollx">
-				<svg viewBox="0 0 900 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z" fill="#D9D9D9"/>
-					<mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="900" height="10">
-					<path d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z" fill="#D9D9D9"/>
-					</mask>
-					<g mask="url(#mask0_0_1)">
-					<rect class="mask" y="-49" height="99" fill="black"/>
-					</g>
-				</svg>
-				<section class="sec1 pin" id="section-id">
-					<span>Advanced</span>
-					<h1>Signify Elegance</h1>
-	
-					<div class="col">
-						<p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
-						<p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+				<div class="wrapper-title">
+					<h1>Simples e Prático</h1>
+				</div>
+				<section class="sec1 pin" id="section-id" style="margin-left: 40vw;">
+					<div class="section-cover">
+						<h1>Briefing</h1>
+						<div class="col">
+							<p>Send us a complete brief along with documents & requirements to estimate the project & </p>
+						</div>
 					</div>
 				</section>
 				<section class="sec2 pin" id="section-id">
-					<span class="anim">Advanced</span>
-					<h1 class="anim">Signify Elegance</h1>
-	
-					<div class="col anim">
-						<p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
-						<p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+					<div class="section-cover">
+						<h1 class="anim">Atenção</h1>
+						<div class="col anim">
+							<p>Review preliminary results and leave your feedback for us to continue or make corrections.</p>
+						</div>
 					</div>
 				</section>
 				<section class="sec3 pin" id="section-id">
-					<span class="anim">Advanced</span>
-					<h1 class="anim">Signify Elegance</h1>
-	
-					<div class="col anim">
-						<p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
-						<p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
-					</div></section>
+					<div class="section-cover">
+						<h1 class="anim">Aprovação</h1>
+		
+						<div class="col anim">
+							<p>Approve the draft version of the services you like and want us to deliver.</p>
+						</div>
+					</div>
+				</section>
+				<section class="sec3 pin" id="section-id">
+					<div class="section-cover">
+						<h1 class="anim">Resultados</h1>
+						<div class="col anim">
+							<p>Receive the perfect quality of your services on time & leave us a review if you like.</p>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
-		<div class="section-center3">
-			<h1 class="mb-0">Uma solução tech completa</h1>
-			<h2>Tudo o que você precisa para elevar sua receita e crescimento no meio digital.</h2>
+		<div class="mobileCotainerScroll">
+			<div class="mobileContainer">
+				<div class="mobile-title">
+					<h1>Simples e Prático</h1>
+				</div>
+				<div class="section-cover">
+					<h1>Briefing</h1>
+					<p>Approve the draft version of the services you like and want us to deliver.</p>
+				</div>
+				<div class="section-cover">
+					<h1 class="anim">Atenção</h1>
+					<p>Approve the draft version of the services you like and want us to deliver.</p>
+				</div>
+				<div class="section-cover">
+					<h1 class="anim">Aprovação</h1>
+					<p>Approve the draft version of the services you like and want us to deliver.</p>
+				</div>
+				<div class="section-cover">
+					<h1 class="anim">Resultados</h1>
+					<p>Approve the draft version of the services you like and want us to deliver.</p>
+				</div>
+			</div>
+		</div>
+		<div class="removable">
+			<div class="section-center3" id="removable">
+				<h1 class="mb-0">Uma solução tech completa</h1>
+				<h2>Tudo o que você precisa para elevar sua receita e crescimento no meio digital.</h2>
+			</div>
 		</div>
 		<div class="main-services-container">
 			<div class="assistanceWrapper">
@@ -298,459 +303,21 @@
 				</div>
 			</div>
 		</div>
-	<script>
-		$(document).ready(function() {
-	
-		  var owl = $("#owl-demo");
-	
-		  owl.owlCarousel({
-	
-			// Define custom and unlimited items depending from the width
-			// If this option is set, itemsDeskop, itemsDesktopSmall, itemsTablet, itemsMobile etc. are disabled
-			// For better preview, order the arrays by screen size, but it's not mandatory
-			// Don't forget to include the lowest available screen size, otherwise it will take the default one for screens lower than lowest available.
-			// In the example there is dimension with 0 with which cover screens between 0 and 450px
-			
-			//Basic Speeds
-			slideSpeed : 200,
-			paginationSpeed : 800,
-		
-			//Autoplay
-			autoPlay : true,
-			goToFirst : true,
-			goToFirstSpeed : 1000,
-		
-			// Navigation
-			navigation : false,
-			navigationText : ["prev","next"],
-			pagination : false,
-			
-		
-			// Responsive
-			responsive: true,
-			items : 3,
-			itemsDesktop : [1600,3],
-			itemsTablet: [1400,2],
-			itemsMobile : [479,1]
-	
-		  });
-	
-		});
-	  </script>
-	  <script>
-		$(document).ready(function() {
-	
-		  var owl = $("#owl-about");
-	
-		  owl.owlCarousel({
-	
-			// Define custom and unlimited items depending from the width
-			// If this option is set, itemsDeskop, itemsDesktopSmall, itemsTablet, itemsMobile etc. are disabled
-			// For better preview, order the arrays by screen size, but it's not mandatory
-			// Don't forget to include the lowest available screen size, otherwise it will take the default one for screens lower than lowest available.
-			// In the example there is dimension with 0 with which cover screens between 0 and 450px
-			
-			//Basic Speeds
-			slideSpeed : 200,
-			paginationSpeed : 800,
-		
-			//Autoplay
-			autoPlay : false,
-			goToFirst : true,
-			goToFirstSpeed : 1000,
-		
-			// Navigation
-			
-			navigation : false,
-			navigationText : ["prev","next"],
-			pagination : true,
-			
-			// Responsive
-			responsive: true,
-			items : 3,
-			itemsDesktop : [1400,2],
-			itemsTablet: [900,1],
-			itemsMobile : [730,1],
-	
-		  });
-	
-		});
-	  </script>
-	  <script>
-      $(document).ready(function() {
-  
-        var owl = $("#owl-demo");
-  
-        owl.owlCarousel({
-  
-          // Define custom and unlimited items depending from the width
-          // If this option is set, itemsDeskop, itemsDesktopSmall, itemsTablet, itemsMobile etc. are disabled
-          // For better preview, order the arrays by screen size, but it's not mandatory
-          // Don't forget to include the lowest available screen size, otherwise it will take the default one for screens lower than lowest available.
-          // In the example there is dimension with 0 with which cover screens between 0 and 450px
-          
-          //Basic Speeds
-          slideSpeed : 200,
-          paginationSpeed : 800,
-      
-          //Autoplay
-          autoPlay : false,
-          goToFirst : true,
-          goToFirstSpeed : 1000,
-      
-          // Navigation
-          navigation : false,
-          navigationText : ["<",">"],
-          pagination : true,
-          
-      
-          // Responsive
-          responsive: true,
-          items : 2,
-          itemsDesktop : [1500,2],
-          itemsTablet: [1499,1],
-          itemsMobile : [479,1]
-  
-        });
-  
-      });
-    </script>
-	<script>
-		$(document).ready(function() {
-	
-		  var owl = $("#owl-depoiments");
-	
-		  owl.owlCarousel({
-	
-			// Define custom and unlimited items depending from the width
-			// If this option is set, itemsDeskop, itemsDesktopSmall, itemsTablet, itemsMobile etc. are disabled
-			// For better preview, order the arrays by screen size, but it's not mandatory
-			// Don't forget to include the lowest available screen size, otherwise it will take the default one for screens lower than lowest available.
-			// In the example there is dimension with 0 with which cover screens between 0 and 450px
-			
-			//Basic Speeds
-			slideSpeed : 200,
-			paginationSpeed : 800,
-		
-			//Autoplay
-			autoPlay : false,
-			goToFirst : true,
-			goToFirstSpeed : 1000,
-		
-			// Navigation
-			navigation : false,
-			navigationText : ["<",">"],
-			pagination : true,
-			
-		
-			// Responsive
-			responsive: true,
-			items : 4,
-			itemsDesktop : [1500,1],
-			itemsTablet: [1499,1],
-			itemsMobile : [479,1]
-	
-		  });
-	
-		});
-	  </script>
-	    <script>
-      
-			/* Please ❤ this if you like it! */
-			
-			(function($) { "use strict";
-			
-			$(function() {
-			  var header = $(".start-style");
-			  $(window).scroll(function() {    
-				var scroll = $(window).scrollTop();
-			  
-				if (scroll >= 10) {
-				  header.removeClass('start-style').addClass("scroll-on");
-				} else {
-				  header.removeClass("scroll-on").addClass('start-style');
-				}
-			  });
-			});		
-			  
-			//Animation
-			
-			$(document).ready(function() {
-			  $('body.hero-anime').removeClass('hero-anime');
-			});
-			
-			//Menu On Hover
-			  
-			$('body').on('mouseenter mouseleave','.nav-item',function(e){
-				if ($(window).width() > 750) {
-				  var _d=$(e.target).closest('.nav-item');_d.addClass('show');
-				  setTimeout(function(){
-				  _d[_d.is(':hover')?'addClass':'removeClass']('show');
-				  },1);
-				}
-			});	
-			
-			})(jQuery); 
-		</script>
-		<script id="vertexShader" type="x-shader/x-vertex">
-			//
-			// GLSL textureless classic 3D noise "cnoise",
-			// with an RSL-style periodic variant "pnoise".
-			// Author:  Stefan Gustavson (stefan.gustavson@liu.se)
-			// Version: 2011-10-11
-			//
-			// Many thanks to Ian McEwan of Ashima Arts for the
-			// ideas for permutation and gradient selection.
-			//
-			// Copyright (c) 2011 Stefan Gustavson. All rights reserved.
-			// Distributed under the MIT license. See LICENSE file.
-			// https://github.com/ashima/webgl-noise
-			//
-			
-			vec3 mod289(vec3 x)
-			{
-			  return x - floor(x * (1.0 / 289.0)) * 289.0;
-			}
-			
-			vec4 mod289(vec4 x)
-			{
-			  return x - floor(x * (1.0 / 289.0)) * 289.0;
-			}
-			
-			vec4 permute(vec4 x)
-			{
-			  return mod289(((x*34.0)+1.0)*x);
-			}
-			
-			vec4 taylorInvSqrt(vec4 r)
-			{
-			  return 1.79284291400159 - 0.85373472095314 * r;
-			}
-			
-			vec3 fade(vec3 t) {
-			  return t*t*t*(t*(t*6.0-15.0)+10.0);
-			}
-			
-			// Classic Perlin noise
-			float cnoise(vec3 P)
-			{
-			  vec3 Pi0 = floor(P); // Integer part for indexing
-			  vec3 Pi1 = Pi0 + vec3(1.0); // Integer part + 1
-			  Pi0 = mod289(Pi0);
-			  Pi1 = mod289(Pi1);
-			  vec3 Pf0 = fract(P); // Fractional part for interpolation
-			  vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
-			  vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
-			  vec4 iy = vec4(Pi0.yy, Pi1.yy);
-			  vec4 iz0 = Pi0.zzzz;
-			  vec4 iz1 = Pi1.zzzz;
-			
-			  vec4 ixy = permute(permute(ix) + iy);
-			  vec4 ixy0 = permute(ixy + iz0);
-			  vec4 ixy1 = permute(ixy + iz1);
-			
-			  vec4 gx0 = ixy0 * (1.0 / 5.0);
-			  vec4 gy0 = fract(floor(gx0) * (1.0 / 5.0)) - 0.5;
-			  gx0 = fract(gx0);
-			  vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
-			  vec4 sz0 = step(gz0, vec4(0.0));
-			  gx0 -= sz0 * (step(0.0, gx0) - 0.5);
-			  gy0 -= sz0 * (step(0.0, gy0) - 0.5);
-			
-			  vec4 gx1 = ixy1 * (1.0 / 5.0);
-			  vec4 gy1 = fract(floor(gx1) * (1.0 / 5.0)) - 0.5;
-			  gx1 = fract(gx1);
-			  vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
-			  vec4 sz1 = step(gz1, vec4(0.0));
-			  gx1 -= sz1 * (step(0.0, gx1) - 0.5);
-			  gy1 -= sz1 * (step(0.0, gy1) - 0.5);
-			
-			  vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
-			  vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
-			  vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
-			  vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
-			  vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
-			  vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
-			  vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
-			  vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
-			
-			  vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
-			  g000 *= norm0.x;
-			  g010 *= norm0.y;
-			  g100 *= norm0.z;
-			  g110 *= norm0.w;
-			  vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
-			  g001 *= norm1.x;
-			  g011 *= norm1.y;
-			  g101 *= norm1.z;
-			  g111 *= norm1.w;
-			
-			  float n000 = dot(g000, Pf0);
-			  float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
-			  float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
-			  float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
-			  float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
-			  float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
-			  float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
-			  float n111 = dot(g111, Pf1);
-			
-			  vec3 fade_xyz = fade(Pf0);
-			  vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
-			  vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
-			  float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
-			  return 2.2 * n_xyz;
-			}
-			
-			// Classic Perlin noise, periodic variant
-			float pnoise(vec3 P, vec3 rep)
-			{
-			  vec3 Pi0 = mod(floor(P), rep); // Integer part, modulo period
-			  vec3 Pi1 = mod(Pi0 + vec3(1.0), rep); // Integer part + 1, mod period
-			  Pi0 = mod289(Pi0);
-			  Pi1 = mod289(Pi1);
-			  vec3 Pf0 = fract(P); // Fractional part for interpolation
-			  vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
-			  vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
-			  vec4 iy = vec4(Pi0.yy, Pi1.yy);
-			  vec4 iz0 = Pi0.zzzz;
-			  vec4 iz1 = Pi1.zzzz;
-			
-			  vec4 ixy = permute(permute(ix) + iy);
-			  vec4 ixy0 = permute(ixy + iz0);
-			  vec4 ixy1 = permute(ixy + iz1);
-			
-			  vec4 gx0 = ixy0 * (1.0 / 5.0);
-			  vec4 gy0 = fract(floor(gx0) * (1.0 / 5.0)) - 0.5;
-			  gx0 = fract(gx0);
-			  vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
-			  vec4 sz0 = step(gz0, vec4(0.0));
-			  gx0 -= sz0 * (step(0.0, gx0) - 0.5);
-			  gy0 -= sz0 * (step(0.0, gy0) - 0.5);
-			
-			  vec4 gx1 = ixy1 * (1.0 / 5.0);
-			  vec4 gy1 = fract(floor(gx1) * (1.0 / 5.0)) - 0.5;
-			  gx1 = fract(gx1);
-			  vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
-			  vec4 sz1 = step(gz1, vec4(0.0));
-			  gx1 -= sz1 * (step(0.0, gx1) - 0.5);
-			  gy1 -= sz1 * (step(0.0, gy1) - 0.5);
-			
-			  vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
-			  vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
-			  vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
-			  vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
-			  vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
-			  vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
-			  vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
-			  vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
-			
-			  vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
-			  g000 *= norm0.x;
-			  g010 *= norm0.y;
-			  g100 *= norm0.z;
-			  g110 *= norm0.w;
-			  vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
-			  g001 *= norm1.x;
-			  g011 *= norm1.y;
-			  g101 *= norm1.z;
-			  g111 *= norm1.w;
-			
-			  float n000 = dot(g000, Pf0);
-			  float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
-			  float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
-			  float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
-			  float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
-			  float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
-			  float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
-			  float n111 = dot(g111, Pf1);
-			
-			  vec3 fade_xyz = fade(Pf0);
-			  vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
-			  vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
-			  float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
-			  return 1.5 * n_xyz;
-			}
-			
-			// Turbulence By Jaume Sanchez => https://codepen.io/spite/
-			
-			varying vec2 vUv;
-			varying float noise;
-			varying float qnoise;
-			varying float displacement;
-			
-			uniform float time;
-			uniform float displace;
-			uniform float pointscale;
-			uniform float decay;
-			uniform float size;
-			uniform float complex;
-			uniform float waves;
-			uniform float eqcolor;
-			uniform bool fragment;
-			
-			float turbulence( vec3 p) {
-			  float t = - 0.005;
-			  for (float f = 1.0 ; f <= 1.0 ; f++ ){
-				float power = pow( 1.3, f );
-				t += abs( pnoise( vec3( power * p ), vec3( 10.0, 10.0, 10.0 ) ) / power );
-			  }
-			  return t;
-			}
-			
-			void main() {
-			
-			  vUv = uv;
-			
-			  noise = (2.0 *  - waves) * turbulence( decay * abs(normal + time));
-			  qnoise = (0.3 *  - eqcolor) * turbulence( decay * abs(normal + time));
-			  float b = pnoise( complex * (position) + vec3( (decay * 2.0) * time ), vec3( 100.0 ) );
-			  
-			  displacement = - atan(noise) + tan(b * displace);
-			
-			  vec3 newPosition = (position) + (normal * displacement);
-			  gl_Position = (projectionMatrix * modelViewMatrix) * vec4( newPosition, abs(size) );
-			  gl_PointSize = (3.0);
-			}
-			
-		  </script>
-		  <script id="fragmentShader" type="x-shader/x-vertex">
-			varying float qnoise;
-			varying float noise;
-			
-			uniform float time;
-			uniform bool redhell;
-			uniform float rcolor;
-			uniform float gcolor;
-			uniform float bcolor;
-			
-			void main() {
-			  float r, g, b;
-			  
-			  if (!redhell == true) {
-				r = sin(qnoise + rcolor);
-				g = normalize(qnoise + (gcolor / 2.0));
-				b = tan(qnoise + bcolor);
-			  } else {
-				r = normalize(qnoise + rcolor);
-				g = cos(qnoise + gcolor);
-				b = sin(qnoise + bcolor);
-			  }
-			  gl_FragColor = vec4(r, g, b, 1.0);
-			}
-		  </script>
+		<script src='https://codepen.io/juliangarnier/pen/REyzrR/75efae7724dbc3c055e918057fc4aca5.js'></script>
+		<script src="./js/blob.js"></script>
 		<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
 		<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+		<script src='./js/Three/three.js'></script>
 		<script  src="./script.js"></script>
+		<script src="./js/Navbar/navbar.js"></script>
+		<script src="./js/bgChangeOnScroll.js"></script>
 
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
 		<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'></script>
 		<script src='//cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
-		<script src="./js/blob.js"></script>
 
 		<script src="./js/smoothScroll.js"></script>
 		<script src="./js/navbar.js"></script>
 		<script src="./js/cursor.js"></script>
-		<script src="./js/hotizontalScroll.js"></script>	
+		<script src="./js/hotizontalScroll.js"></script>
 </body>
 </html>
