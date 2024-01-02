@@ -23,6 +23,7 @@ mm.add("(min-width: 780px)", () => {
 	trigger:".gallery",
 	start:"top top",
 	end:"bottom bottom",
+	// anticipatePin: 1,
 	pin:".right"
 })
 

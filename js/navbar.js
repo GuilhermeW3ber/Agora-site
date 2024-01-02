@@ -16,7 +16,6 @@ $(document).ready(function(){
     });
 });
 
-
 const subMenus = $('.sub-menu');
 const menuLinks = $('.menu-link');
 

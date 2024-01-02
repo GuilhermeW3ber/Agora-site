@@ -15,22 +15,28 @@
 	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
   	<label for="menu-icon"></label>
 	<div class="logo">
-		<a href="">
+		<a href="#home">
 			<img src="./agora.png" alt="" id="logo">
 		</a>
 	</div>
   	<nav class="nav"> 		
   		<ul class="pt-5">
-  			<li><a href="#">Sobre Nós</a></li>
-  			<li><a href="#">Projetos</a></li>
-			<li><a href="#">Processo</a></li>
-  			<li><a href="#">Contato</a></li>
+  			<li><a href="#sobre-nos">Sobre Nós</a></li>
+  			<li><a href="#projects">Projetos</a></li>
+			<li><a href="#process">Processo</a></li>
+  			<li><a href="#contact">Contato</a></li>
+			<li><a href="#contact" id="mensage">Estimar Projeto</a></li>
+			<div class="nav-socials">
+				<a href=""><i class='bx bxl-instagram'></i></a>
+				<a href=""><i class='bx bxl-linkedin' ></i></a>
+				<a href=""><i class='bx bxl-facebook' ></i></a>
+			</div>
   		</ul>
   	</nav>
 	<div class="cursor-dot" data-cursor-dot></div>
 	<div class="cursor-outline" data-cursor-outline></div>
 	<div class="animation-wrapper">
-		<div class="sphere-animation">
+		<div class="sphere-animation" id="home">
 			<svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
 				<defs>
 				<linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
@@ -64,25 +70,22 @@
 		</div>
 	</div>
 		<div class="section-center">
-			<h1>Design.Desenvolvimento.Marca</h1>
+			<h1>Design.<br> Desenvolvimento. <br>Marca.</h1>
 			<div class="section-center-title">
 				<span>Design.</span>
 				<span>Desenvolvimento.</span>
 				<span>Marca.</span>
 			</div>
-			<h2>Aprimore sua <br> infraestrutura digital</h2>
 			<a href=""> Entre em Contato</a>
 			<h3>Auxiliando no crescimento de <i>+10</i> negócios <br> de stratups até companhias.</h3>
 		</div>
-		<div>
-			<div class="section-center5">
-				<h1 class="">Quem somos</h1>
-				<h2>Uma agência especializada em desenvolvimento web e aplicações.</h2>
-				<a href="">Saber Mais</a>
-			</div>
+		<div class="section-center5" id="sobre-nos">
+			<h1 class="">Quem somos</h1>
+			<h2>Uma agência especializada em desenvolvimento  de software e aplicações.</h2>
+			<a href="./about.html">Saber Mais</a>
 		</div>
 		<div>
-			<div class="section-center2">
+			<div class="section-center2" id="projects">
 				<h1 class="">Feito para o seu negócio</h1>
 				<h2>Acesse um ecossistema de soluções para levar sua empresa ao próximo nível.</h2>
 			</div>
@@ -91,16 +94,16 @@
 			<div class="left">
 				<div class="desktopContent">
 					<div class="desktopContentSection">
-						<h1 style="color: #505050;" >Drywallcuritiba.com.br</h1>
+						<h1 style="color: #F2AB79;" >Drywallcuritiba.com.br</h1>
 						<h2>Construtora, <br> prestadora de <br> serviços</h2>
 						<h3>Social Media, Design, <br> Desenvolvimento</h3>
-						<a href="" style="border: #505050 1px solid;">Saber Mais</a>
+						<a href="https://drywallcuritiba.com.br" style="border: #F2AB79 1px solid;">Saber Mais</a>
 					</div>
 					<div class="desktopContentSection">
 						<h1 style="color: rgb(72, 196, 212);">Consultoriadornelles.com.br</h1>
 						<h2>Consultoria, <br> planos de Seguros</h2>
 						<h3> Design, Desenvolvimento</h3>
-						<a href="" style="border: rgb(34, 44, 46) 1px solid;">Saber Mais</a>
+						<a href="http://consultoriadornelles.com.br" style="border: rgb(72, 196, 212) 1px solid;">Saber Mais</a>
 					</div>
 					<div class="desktopContentSection">
 						<h1 style="color: #F2AB79;">Construtorajcp.com.br</h1>
@@ -134,7 +137,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapper">
+		<div class="wrapper" id="process">
 			<div class="container scrollx">
 				<div class="wrapper-title">
 					<h1>Simples e Prático</h1>
@@ -143,15 +146,15 @@
 					<div class="section-cover">
 						<h1>Briefing</h1>
 						<div class="col">
-							<p>Send us a complete brief along with documents & requirements to estimate the project & </p>
+							<p>Envie um briefing completo junto com documentos e requisitos para orçar o projeto.</p>
 						</div>
 					</div>
 				</section>
 				<section class="sec2 pin" id="section-id">
 					<div class="section-cover">
-						<h1 class="anim">Atenção</h1>
+						<h1 class="anim">Continuidade</h1>
 						<div class="col anim">
-							<p>Review preliminary results and leave your feedback for us to continue or make corrections.</p>
+							<p>Revise os resultados e deixe seu feedback para continuarmos ou fazermos correções.</p>
 						</div>
 					</div>
 				</section>
@@ -160,7 +163,7 @@
 						<h1 class="anim">Aprovação</h1>
 		
 						<div class="col anim">
-							<p>Approve the draft version of the services you like and want us to deliver.</p>
+							<p>Aprove a versão preliminar dos serviços que gostar e que deseja que forneçamos.</p>
 						</div>
 					</div>
 				</section>
@@ -168,7 +171,7 @@
 					<div class="section-cover">
 						<h1 class="anim">Resultados</h1>
 						<div class="col anim">
-							<p>Receive the perfect quality of your services on time & leave us a review if you like.</p>
+							<p>Receba seus serviços com qualidade perfeita dentro do prazo e deixe-nos um comentário :)</p>
 						</div>
 					</div>
 				</section>
@@ -181,19 +184,19 @@
 				</div>
 				<div class="section-cover">
 					<h1>Briefing</h1>
-					<p>Approve the draft version of the services you like and want us to deliver.</p>
+					<p>Envie um briefing completo junto com documentos e requisitos para orçar o projeto.</p>
 				</div>
 				<div class="section-cover">
-					<h1 class="anim">Atenção</h1>
-					<p>Approve the draft version of the services you like and want us to deliver.</p>
+					<h1 class="anim">Continuidade</h1>
+					<p>Revise os resultados e deixe seu feedback para continuarmos ou fazermos correções.</p>
 				</div>
 				<div class="section-cover">
 					<h1 class="anim">Aprovação</h1>
-					<p>Approve the draft version of the services you like and want us to deliver.</p>
+					<p>Aprove a versão preliminar dos serviços que gostar e que deseja que forneçamos.</p>
 				</div>
 				<div class="section-cover">
 					<h1 class="anim">Resultados</h1>
-					<p>Approve the draft version of the services you like and want us to deliver.</p>
+					<p>Receba seus serviços com qualidade perfeita dentro do prazo e deixe-nos um comentário :)</p>
 				</div>
 			</div>
 		</div>
@@ -242,7 +245,7 @@
 				</div>
 			</div>
 		</div> -->
-		<div class="background-contact">
+		<div class="background-contact" id="#process">
 			<div class="section-contact">
 				<h1 class="mb-0">Uma solução tech completa</h1>
 				<h2>Tudo o que você precisa para elevar sua receita e crescimento no meio digital.</h2>

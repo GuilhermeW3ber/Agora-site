@@ -15,6 +15,7 @@ if (windowX>=700){
       scrub: 1,
       end: "+=2500",
       markers: false,
+      // anticipatePin: 1,
     }
   });
 
