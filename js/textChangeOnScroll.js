@@ -5,5 +5,5 @@ let st = ScrollTrigger.create({
     pin: ".section-center",
     start: "end end",
     end: "top top ",
-    markers: true,
+    markers: false,
 });
