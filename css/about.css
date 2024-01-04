@@ -428,6 +428,14 @@ a{
   display: block;
 }
 
+#removable-h2-1-1{
+  display: none;
+}
+
+#removable-h2-1-2{
+  display: block;
+}
+
 .section-center2{
   position: absolute;
   display: none;
@@ -725,6 +733,7 @@ a{
 
   .section-center2{
     height:50vh;
+    margin-top: 30vh;
   }
 
   .section-center h1{
@@ -1963,9 +1972,18 @@ section{
 @media (max-width: 860px) {
   #removable-h2-1{
     display: block;
+    margin-top: 30vh;
   }
 
   #removable-h2-2{
+    display: none;
+  }
+
+  #removable-h2-1-1{
+    display: block;
+  }
+  
+  #removable-h2-1-2{
     display: none;
   }
 
@@ -2232,7 +2250,7 @@ section{
   /* letter-spacing: 3px; */
   font-size: 1.6em;
   line-height: 1px;
-  margin-top: 10vh;
+  margin-top: 0vh;
   color: #B9B9BF;
   text-align: center;
   margin-bottom: 40px;
@@ -2278,7 +2296,7 @@ section{
     /* letter-spacing: 3px; */
     font-size: 1.4em;
     line-height: 1px;
-    margin-top: 10vh;
+    margin-top: 0vh;
     color: #B9B9BF;
     text-align: center;
     margin-bottom: 40px;
